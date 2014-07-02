@@ -2,4 +2,5 @@ Markdown-Adventures
 ===================
 
 ##This is my Markdown Adventures
-##lets go on amazing rides
+##lets go on amazing ride
+
