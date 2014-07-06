@@ -17,69 +17,90 @@ Please meet my [father](http://en.wikipedia.org/wiki/John_Gruber)He is a writer 
 
 #My Features
 ##PARAGRAPHS, HEADERS, BLOCKQUOTES
-I offers two styles of headers: Setext and atx. Setext-style headers for <h1> and <h2> are created by “underlining” with equal signs (=) and hyphens (-), respectively. To create an atx-style header, you put 1-6 hash marks (#) at the beginning of the line — the number of hashes equals the resulting HTML header level.
------------------------------------------
-A First Level Header
-====================
+A paragraph is simply one or more consecutive lines of text, separated
+by one or more blank lines. (A blank line is any line that looks like
+a blank line -- a line containing nothing but spaces or tabs is
+considered blank.) Normal paragraphs should not be indented with
+spaces or tabs.
 
-A Second Level Header
----------------------
+I offers two styles of headers: *Setext* and *atx*.
+Setext-style headers for `<h1>` and `<h2>` are created by
+"underlining" with equal signs (`=`) and hyphens (`-`), respectively.
+To create an atx-style header, you put 1-6 hash marks (`#`) at the
+beginning of the line -- the number of hashes equals the resulting
+HTML header level.
 
-Now is the time for all good men to come to
-the aid of their country. This is just a
-regular paragraph.
+Blockquotes are indicated using email-style '`>`' angle brackets.
 
-The quick brown fox jumped over the lazy
-dog's back.
+Markdown:
 
-### Header 3
+    A First Level Header
+    ====================
+    
+    A Second Level Header
+    ---------------------
 
-> This is a blockquote.
-> 
-> This is the second paragraph in the blockquote.
->
-> ## This is an H2 in a blockquote
+    Now is the time for all good men to come to
+    the aid of their country. This is just a
+    regular paragraph.
+
+    The quick brown fox jumped over the lazy
+    dog's back.
+    
+    ### Header 3
+
+    > This is a blockquote.
+    > 
+    > This is the second paragraph in the blockquote.
+    >
+    > ## This is an H2 in a blockquote
+
+
 Output:
 
-<h1>A First Level Header</h1>
+    <h1>A First Level Header</h1>
+    
+    <h2>A Second Level Header</h2>
+    
+    <p>Now is the time for all good men to come to
+    the aid of their country. This is just a
+    regular paragraph.</p>
+    
+    <p>The quick brown fox jumped over the lazy
+    dog's back.</p>
+    
+    <h3>Header 3</h3>
+    
+    <blockquote>
+        <p>This is a blockquote.</p>
+        
+        <p>This is the second paragraph in the blockquote.</p>
+        
+        <h2>This is an H2 in a blockquote</h2>
+    </blockquote>
 
-<h2>A Second Level Header</h2>
 
-<p>Now is the time for all good men to come to
-the aid of their country. This is just a
-regular paragraph.</p>
 
-<p>The quick brown fox jumped over the lazy
-dog's back.</p>
-
-<h3>Header 3</h3>
-
-<blockquote>
-    <p>This is a blockquote.</p>
-
-    <p>This is the second paragraph in the blockquote.</p>
-
-    <h2>This is an H2 in a blockquote</h2>
-</blockquote>
-PHRASE EMPHASIS
+### Phrase Emphasis ###
 
 Markdown uses asterisks and underscores to indicate spans of emphasis.
 
 Markdown:
 
-Some of these words *are emphasized*.
-Some of these words _are emphasized also_.
+    Some of these words *are emphasized*.
+    Some of these words _are emphasized also_.
+    
+    Use two asterisks for **strong emphasis**.
+    Or, if you prefer, __use two underscores instead__.
 
-Use two asterisks for **strong emphasis**.
-Or, if you prefer, __use two underscores instead__.
 Output:
 
-<p>Some of these words <em>are emphasized</em>.
-Some of these words <em>are emphasized also</em>.</p>
-
-<p>Use two asterisks for <strong>strong emphasis</strong>.
-Or, if you prefer, <strong>use two underscores instead</strong>.</p>
-
+    <p>Some of these words <em>are emphasized</em>.
+    Some of these words <em>are emphasized also</em>.</p>
+    
+    <p>Use two asterisks for <strong>strong emphasis</strong>.
+    Or, if you prefer, <strong>use two underscores instead</strong>.</p>
+   
 ## LISTS
 Unordered (bulleted) lists use asterisks, pluses, and hyphens (*, +, and -) as list markers. These three markers are interchangable; this:
 
